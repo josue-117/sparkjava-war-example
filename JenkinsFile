@@ -15,7 +15,7 @@ pipeline {
         }
    stage('Deploy') {
             steps {
-              sh '''docker cp /home/prueba/workspace/prueba2/target/sparkjava-hello-world-1.0.war josue-tomcat://usr/local/tomcat/webapps'''
+              sh '''docker cp /home/prueba/workspace/prueba2/target/sparkjava-hello-world-1.0.war josue1-tomcat://usr/local/tomcat/webapps'''
           }
         }
   }
